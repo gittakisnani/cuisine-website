@@ -1,0 +1,153 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+
+
+/* Import CSS Files  */
+@import url(Components.css);
+@import url(GlobalRules.css);
+@import url(Variables.css);
+section {
+    padding: 80px 0 0 !important;
+}
+.title .container h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--black-2);
+    margin-top: 4.5rem;
+} 
+@media screen and (max-width: 767px) {
+    .title .container h1{
+        font-size: 2.2rem;
+        margin-top: 2.5rem;
+    }
+}
+
+/* Starts Specials Menu  */
+
+.specials-menu {
+    padding: 1rem 0 !important;
+}
+h2:not(.footer h2) {
+    width: 90%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--black-2);
+}
+
+@media screen and (max-width: 767px) {
+     h2 {
+        font-size: 2rem;
+    }
+}
+
+.specials-menu .container {
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+    .specials-menu .container {
+        flex-direction: column;
+    }
+}
+
+.specials-menu .container .special-box {
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: var(--lightGreen-1);
+    max-height: 300px;
+    max-width: calc(600px - 1rem);
+}
+
+.specials-menu .container .special-box .special-box-image {
+    border-radius: 1rem;
+    overflow: hidden;
+    flex: 3;
+}
+.specials-menu .container .special-box .special-box-image img {
+    object-fit: fill;
+}
+
+.specials-menu .container .special-box .special-box-info {
+    flex: 2;
+}
+
+.specials-menu .container .special-box .special-box-info h3 {
+    font-size: 3rem;
+    color: var(--black-2);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.specials-menu .container .special-box .special-box-info p.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--green-1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.specials-menu .container .special-box .special-box-info .rates {
+    height: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+    .specials-menu .container .special-box {
+        max-height: 200px;
+        padding: 1.5rem;
+    }
+    .specials-menu .container .special-box .special-box-info {
+        flex: 3;
+    }
+    .specials-menu .container .special-box .special-box-info h3  {
+        font-size: 2.1rem;
+    }
+}
+/* End Specials Menu  */
+/* Start Top Dishes  */
+ .container.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.container.menu .menu-box {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--lightGreen-1);
+    max-height: 250px;
+}
+
+ .container .menu-image {
+    overflow: hidden;
+    border-radius: 1rem;
+    flex: 1;
+}
+.container .menu-info {
+    flex: 1;
+}
+
+.container .menu-info h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: var(--black-2);
+    font-weight: 700;
+}
+.container .menu-info p {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--green-1);
+    font-family: 'Poppins', sans-serif;
+}
+.footer {
+    margin-top: 5rem;
+    padding-bottom: 10rem !important;
+}
+
+/* End Top Dishes  */

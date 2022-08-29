@@ -1,0 +1,10 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+
+
+/* Import CSS Files  */
+@import url(Components.css);
+@import url(GlobalRules.css);
+@import url(Variables.css);
+@import url(Contact.css);
+

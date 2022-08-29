@@ -1,0 +1,88 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Raleway:wght@400;500;600&display=swap');
+
+
+/* Import CSS Files  */
+@import url(Components.css);
+@import url(GlobalRules.css);
+@import url(Variables.css);
+header {
+    margin-bottom: 100px;
+}
+/* Start The Heading  */
+.contact-section .contact-section-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--black-2);
+    margin-bottom: 2rem;
+} 
+.contact-section form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.box-contact {
+     width: 49%;
+ }
+
+ .box-contact.special{
+     width: 100%;
+ }
+ @media screen and (max-width: 767px) {
+     
+ .box-contact {
+     width: 100%;
+ }
+}
+.contact-section form input,
+.contact-section form textarea,
+ select{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: var(--lightGreen-1);
+    margin: 1rem 0;
+    resize: none;
+    font-size: 1.8rem;
+}
+@media screen and (max-width: 767px) {
+    .contact-section form input,
+    .contact-section form textarea{
+        padding: 1.5rem;
+        font-size: 1.6rem;
+    }
+    
+}
+.contact-section form textarea {
+    height: 250px;
+}
+
+.contact-section form textarea[name="Note"] {
+    height: 150px;
+}
+
+input[type=submit] {
+    background-color: var(--green-1) !important;
+    color: white;
+    font-weight: 500;
+    display: block;
+    max-width: 150px;
+    padding: .8rem 1.8rem;
+}
+@media screen and (max-width: 767px) {
+    input[type=submit] {
+        font-size: 1.8rem !important;
+    }
+}
+form label {
+    display: block;
+    width: fit-content;
+    font-size: 1.8rem;
+    color: var(--black-2);
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+/* End The Heading  */
